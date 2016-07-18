@@ -8,13 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".widget.MainActivity" />
         <activity
             android:name=".SimpleListActivity"
             android:exported="true" />
@@ -24,7 +18,29 @@
         <activity
             android:name=".CustomListActivity"
             android:exported="true" />
-        <activity android:name=".MultiListActivity" android:exported="true"></activity>
+        <activity
+            android:name=".MultiListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ActorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ExpandableListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SpinnerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="true" />
+        <activity android:name=".RecyclerMultiActivity"
+            android:exported="true" ></activity>
     </application>
 
 </manifest>

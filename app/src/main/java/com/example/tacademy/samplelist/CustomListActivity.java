@@ -21,6 +21,7 @@ public class CustomListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_list);
         listView = (ListView)findViewById(R.id.list_view3);
+        listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         mAdapter = new PersonAdapter();
         listView.setAdapter(mAdapter);
         imgView = (ImageView)findViewById(R.id.img_listview);
